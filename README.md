@@ -18,3 +18,8 @@ O processo de atualização mensal dos estabelecimentos e profissionais de saúd
     - Nessa etapa, o script acessa a tabela de profissionais atualizada no banco com a função Connect(), compara com os dados da competência atual e elimina os dados repetidos, restando somente os novos dados da referida competência (linhas 46-51).
     - Uma vez identificados os novos profisssionais, os dados são inseridos no banco de dados com a função Connect2()
     
+OBS:
+
+Para iniciar o processo de atualização o arquivo auto_download.py deve ser executado. Ele faz a leitura da competência e chama os arquivos acima quando necessário.
+
+Para tornar esse processo automatizado é necessário usar um orquestrador para executá-lo diariamente, pois, uma vez que a competência é atuailzada o arquivo pára de executar.
